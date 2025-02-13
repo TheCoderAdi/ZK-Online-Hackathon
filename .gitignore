@@ -1,0 +1,43 @@
+backend/node_modules
+backend/.env
+backend/CreditScore.json
+backend/verification_key.json
+
+# Ignore temporary and generated proof files  
+circuits/witness.wtns  
+circuits/proof.json  
+circuits/public.json  
+circuits/verification_key.json  
+
+# Ignore large or sensitive ZK-related files  
+circuits/creditScore_*.zkey  
+circuits/creditScore.r1cs  
+circuits/creditScore.sym  
+circuits/final.ptau  
+circuits/pot12_*.ptau  
+
+# Ignore input files (can be regenerated)  
+circuits/input.json  
+circuits/creditScore_js
+
+contracts/node_modules
+contracts/.env
+
+# Hardhat files
+contracts/cache
+contracts/artifacts
+
+# TypeChain files
+contracts/typechain
+contracts/typechain-types
+
+# solidity-coverage files
+contracts/coverage
+contracts/coverage.json
+
+# Hardhat Ignition default folder for deployments against a local node
+contracts/ignition/deployments/chain-31337
+
+frontend/node_modules
+frontend/.env
+frontend/.next
