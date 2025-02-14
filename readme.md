@@ -13,7 +13,7 @@ _A decentralized, privacy-preserving credit scoring system using zk-SNARKs, Arbi
 │── 📂 circuits       # zk-SNARK Circuits (Groth16)
 │── 📂 backend        # Express.js API with zkVerify integration
 │── 📂 frontend       # Next.js UI with Tailwind + Framer Motion
-│── 📂 smart-contract # Solidity contract for on-chain credit score storage
+│── 📂 contracts      # Solidity contract for on-chain credit score storage
 └── README.md         # Setup & instructions
 ```
 
@@ -55,7 +55,7 @@ cd circuits
 
 ```sh
 # 1. Compile the circuit
-circom credit_score.circom --r1cs --wasm --sym --c
+circom creditScore.circom --r1cs --wasm --sym --c
 
 # 2. Download or generate Powers of Tau file
 snarkjs powersoftau new bn128 14 pot14_0000.ptau -v
